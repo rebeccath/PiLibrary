@@ -4,9 +4,7 @@
         <title>Dokumentation</title>
     </head>
     <body>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-        </ul>
+        <?php include "menu.html" ?>
         <h1>Dokumentation</h1>
         <h2>Grundeinrichtung</h2>
         <p>

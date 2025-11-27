@@ -15,9 +15,7 @@
  </style>
 </head>
 <body>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-  </ul>
+  <?php include "menu.html" ?>
 
 
 <h1>Kira und Rebecca</h1>

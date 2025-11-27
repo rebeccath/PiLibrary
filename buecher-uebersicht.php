@@ -4,8 +4,6 @@
         <title>Bücher Übersicht</title>
     </head>
     <body>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-        </ul>
+        <?php include "menu.html" ?>
     </body>
 </html>
