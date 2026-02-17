@@ -34,7 +34,7 @@ $pdo = new PDO('mysql:host=localhost;dbname=PiLibrary', 'php', 'passwort', $opti
 $stmt = $pdo->query("SELECT * FROM Buecher");
 $name = $stmt->fetch();
 echo "test";
-echo $name['ISBN'];
+print_r($name);
 ?>
 
 
