@@ -32,7 +32,7 @@ $options = [
 $pdo = new PDO('mysql:host=localhost;dbname=PiLibrary', 'php', 'passwort', $options);
 
 $stmt = $pdo->query("SELECT * FROM Buecher");
-$name =$stmt->fetch();
+$name = $stmt->fetch();
 echo "test";
 echo $name['ISBN'];
 ?>
