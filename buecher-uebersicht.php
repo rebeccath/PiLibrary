@@ -34,7 +34,7 @@ $options = [
 
 $pdo = new PDO('mysql:host=localhost;dbname=PiLibrary', 'data-admin', 'passwort', $options);
 
-$data = $pdo->query("SELECT * FROM Buecher")->fetchAll();
+$data = $pdo->query("SELECT * FROM Buecher");
 while ($row = $data->fetch()) {
     echo "<tr><td>". $row['ISBN'] ."</td><td>". $row['Name'] ."</td><td>". $row['Autor'] ."</td><td>". $row['Auflage'] ."</td><td>". $row['Erscheinungsjahr'] ."</td><td>". $row['Verlag'] ."</td><td>". $row['Ausleihstatus'] ."</td></tr>";
 }
