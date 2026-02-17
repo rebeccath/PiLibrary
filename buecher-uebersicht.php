@@ -30,11 +30,11 @@ $options = [
 
 $pdo = new PDO('mysql:host=localhost;dbname=PiLibrary', 'php', 'passwort', $options);
 
-$data = $pdo->query("SELECT * FROM Buecher")->fetchAll();
-foreach ($data as $row) {
-    /*Hier in Tabelle überfphren */
-    echo $row['ISBN']."<br />\n"; 
-}
+$stmt = $pdo->query("SELECT * FROM Buecher");
+$name =$stmt->fetch();
+echo $name;
+
+
 
 
 
