@@ -31,10 +31,11 @@ $options = [
 
 $pdo = new PDO('mysql:host=localhost;dbname=PiLibrary', 'data-admin', 'passwort', $options);
 
-$stmt = $pdo->query("SELECT * FROM Buecher");
-$name = $stmt->fetch();
-print_r($name);
-echo "test";
+$data = $pdo->query("SELECT * FROM Buecher")->fetchAll();
+foreach ($data as $row) {
+    echo $row['ISBN']."<br />\n";
+}
+
 ?>
 
 
