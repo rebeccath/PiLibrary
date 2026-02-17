@@ -24,7 +24,7 @@
     </table>
     
 <?php
-$options = [
+/*$options = [
     \PDO::ATTR_ERRMODE            => \PDO::ERRMODE_EXCEPTION,
     \PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC,
 ];
@@ -33,8 +33,8 @@ $pdo = new PDO('mysql:host=localhost;dbname=PiLibrary', 'php', 'passwort', $opti
 
 $stmt = $pdo->query("SELECT * FROM Buecher");
 $name = $stmt->fetch();
+print_r($name);*/
 echo "test";
-print_r($name);
 ?>
 
 
