@@ -21,10 +21,16 @@
     <th>Status</th>
 
     </tr>
-    <tr>
-    <td></td>
-    <td></td>
-    <td></td>
+    
+<?php
+$pdo = new PDO('mysql:host=localhost;dbname=PiLibrary', 'php', 'passwort');
+ 
+$sql = "SELECT * FROM Buecher";
+
+/*Hier in Tabelle überfphren */
+
+?>
+
     </table>
     </body>
 </html>
