@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Bücher Übersicht</title>
+        <link rel="stylesheet" href="tablestyle.css">
     </head>
     <body>
         <?php include "menu.html" ?>
