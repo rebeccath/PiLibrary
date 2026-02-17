@@ -35,8 +35,6 @@ $stmt = $pdo->query("SELECT * FROM Buecher");
 $name =$stmt->fetch();
 echo "test";
 echo $name;
-
-
 ?>
 
 
