@@ -21,9 +21,10 @@
     <th>Status</th>
 
     </tr>
+    </table>
     
 <?php
-/* $options = [
+$options = [
     \PDO::ATTR_ERRMODE            => \PDO::ERRMODE_EXCEPTION,
     \PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC,
 ];
@@ -31,16 +32,13 @@
 $pdo = new PDO('mysql:host=localhost;dbname=PiLibrary', 'php', 'passwort', $options);
 
 $stmt = $pdo->query("SELECT * FROM Buecher");
-$name =$stmt->fetch();*/
+$name =$stmt->fetch();
 echo "test";
-
-
-
-
+echo $name;
 
 
 ?>
 
-    </table>
+
     </body>
 </html>

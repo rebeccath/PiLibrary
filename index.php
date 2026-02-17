@@ -7,6 +7,6 @@
     </head>
     <body>
         <?php include "menu.html" ?>
-        <p>Home</p>
+        <p>Home</p>     
     </body>
     </html>
