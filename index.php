@@ -6,8 +6,7 @@
         <title>Home</title>
     </head>
     <body>
-        <a href="projekt-plan.php">Projekt plan</a>
-        <a href="buecher-uebersicht.php">Bücher Übersicht</a>
-        <a href="dokumentation.php">Dokumentation</a>
+        <?php include "menu.html" ?>
+        <p>Home</p>
     </body>
     </html>
