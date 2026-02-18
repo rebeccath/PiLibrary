@@ -5,6 +5,6 @@
     </head>
     <body>
         <?php include "menu.html" ?>
-        <p>unter construction...</p>
+        <h1>under construction...</h1>
     </body>
 </html>
