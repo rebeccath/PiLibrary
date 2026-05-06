@@ -23,7 +23,7 @@
 
     
 <?php
-$config = require '/etc/meineapp/config.php';
+$config = require '/etc/pilibrary/config.php';
 $dbPassword = $config['db_password'];
 //Aktiverit Fehleranzeige
 ini_set('display_errors', 1);
