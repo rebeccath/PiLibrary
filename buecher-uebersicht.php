@@ -23,6 +23,8 @@
 
     
 <?php
+$config = require '/etc/meineapp/config.php';
+$dbPassword = $config['db_password'];
 //Aktiverit Fehleranzeige
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -35,7 +37,7 @@ $options = [
 ];
 
 //Erstellt DPO Objekt
-$pdo = new PDO('mysql:host=localhost;dbname=PiLibrary', 'data-admin', 'passwort', $options);
+$pdo = new PDO('mysql:host=localhost;dbname=PiLibrary', 'data-admin', $dbPassword, $options);
 
 //Zeigt Inhalte der Tabelle "Buecher" als grafische Tabelle an
 $data = $pdo->query("SELECT * FROM Buecher");
