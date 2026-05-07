@@ -42,7 +42,15 @@ $pdo = new PDO('mysql:host=localhost;dbname=PiLibrary', 'data-admin', $dbPasswor
 //Zeigt Inhalte der Tabelle "Buecher" als grafische Tabelle an
 $data = $pdo->query("SELECT * FROM Buecher");
 while ($row = $data->fetch()) {
-    echo "<tr><td>". $row['ISBN'] ."</td><td>". $row['Name'] ."</td><td>". $row['Autor'] ."</td><td>". $row['Auflage'] ."</td><td>". $row['Erscheinungsjahr'] ."</td><td>". $row['Verlag'] ."</td><td>". $row['Ausleihstatus'] ."</td></tr>";
+    // Status umwandeln
+    if ($row['Ausleihstatus'] === "1") {
+        $statusSymbol = "✔️";   // Haken
+    } elseif ($row['Ausleihstatus'] === "e0") {
+        $statusSymbol = "❌";   // X
+    } else {
+        $statusSymbol = "";     // Falls etwas anderes drinsteht
+    }
+    echo "<tr><td>". $row['ISBN'] ."</td><td>". $row['Name'] ."</td><td>". $row['Autor'] ."</td><td>". $row['Auflage'] ."</td><td>". $row['Erscheinungsjahr'] ."</td><td>". $row['Verlag'] ."</td><td>". $statusSymbol ."</td></tr>";
 }
 ?>
 
