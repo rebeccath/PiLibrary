@@ -56,5 +56,6 @@ while ($row = $data->fetch()) {
 
 
     </table>
+    <p>Legende: ✔️ Vorrätig, ❌ Ausgeliehen</p>
     </body>
 </html>
