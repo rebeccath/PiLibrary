@@ -43,9 +43,9 @@ $pdo = new PDO('mysql:host=localhost;dbname=PiLibrary', 'data-admin', $dbPasswor
 $data = $pdo->query("SELECT * FROM Buecher");
 while ($row = $data->fetch()) {
     // Status umwandeln
-    if ($row['Ausleihstatus'] === "1") {
+    if ($row['Ausleihstatus'] === 1) {
         $statusSymbol = "✔️";   // Haken
-    } elseif ($row['Ausleihstatus'] === "e0") {
+    } elseif ($row['Ausleihstatus'] === 0) {
         $statusSymbol = "❌";   // X
     } else {
         $statusSymbol = "";     // Falls etwas anderes drinsteht
