@@ -8,6 +8,7 @@
         <?php include "menu.html" ?>
         <p>Unsere Bücher</p>
         <input type="text" name="suche" value="Suche...">
+        <p>Legende: ✔️ Vorrätig, ❌ Ausgeliehen</p>
     <br>
     <table border="1" style="border-collapse: collapse;">
     <br>
@@ -56,6 +57,5 @@ while ($row = $data->fetch()) {
 
 
     </table>
-    <p>Legende: ✔️ Vorrätig, ❌ Ausgeliehen</p>
     </body>
 </html>
