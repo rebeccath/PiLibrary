@@ -44,3 +44,97 @@ html, body {
   width: 90%;
   margin: 10px auto;
 }
+
+/* Grundlayout */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f7fa;
+    color: #333;
+    margin: 0; 
+    padding: 0; 
+}
+
+/* Hauptüberschrift */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    border-bottom: 3px solid #db9b34;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+}
+
+/* Kapitel */
+h2 {
+    margin-top: 40px;
+    padding: 12px 18px;
+    background-color: #db9b34;
+    color: white;
+    border-radius: 8px;
+}
+
+/* Unterkapitel */
+h3 {
+    margin-top: 25px;
+    color: #2c3e50;
+    border-left: 4px solid #db9b34;
+    padding-left: 12px;
+}
+
+/* Listen */
+ul {
+    margin-bottom: 20px;
+}
+
+li {
+    margin: 6px 0;
+}
+
+/* Verschachtelte Listen */
+ul ul {
+    margin-top: 8px;
+}
+
+/* Hervorgehobene Begriffe */
+strong {
+    color: #1f4e79;
+}
+
+/* Karten-Effekt für Abschnitte */
+h2 + ul,
+h3 + ul {
+    background: #ffffff;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Sanfte Hover-Effekte */
+h2:hover {
+    background-color: #975a1a;
+    transition: 0.2s ease;
+}
+
+h3:hover {
+    color: #db9b34;
+    transition: 0.2s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+}
