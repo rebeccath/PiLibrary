@@ -39,3 +39,8 @@ html, body {
 .left img{
     height: 100px;
 }
+
+.page_body{
+  width: 90%;
+  margin: 10px auto;
+}

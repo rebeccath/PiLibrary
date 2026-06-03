@@ -6,9 +6,11 @@
     </head>
     <body>
         <?php include "menu.html" ?>
-        <p>Unsere Bücher</p>
-        <input type="text" name="suche" value="Suche...">
-        <p>Legende: ✔️ Vorrätig, ❌ Ausgeliehen</p>
+        <div class="page_body">
+            <p>Unsere Bücher</p>
+            <input type="text" name="suche" value="Suche...">
+            <p>Legende: ✔️ Vorrätig, ❌ Ausgeliehen</p>
+        </div>
     <br>
     <table border="1" style="border-collapse: collapse;">
     <br>
