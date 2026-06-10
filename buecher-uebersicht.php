@@ -22,6 +22,7 @@
     <th>Erscheinungsjahr</th>
     <th>Verlag</th>
     <th>Status</th>
+    <th>Rückgabedatum</th>
     </tr>
 
     
@@ -53,7 +54,7 @@ while ($row = $data->fetch()) {
     } else {
         $statusSymbol = "";     // Falls etwas anderes drinsteht
     }
-    echo "<tr><td>". $row['ISBN'] ."</td><td>". $row['Name'] ."</td><td>". $row['Autor'] ."</td><td>". $row['Auflage'] ."</td><td>". $row['Erscheinungsjahr'] ."</td><td>". $row['Verlag'] ."</td><td>". $statusSymbol ."</td></tr>";
+    echo "<tr><td>". $row['ISBN'] ."</td><td>". $row['Name'] ."</td><td>". $row['Autor'] ."</td><td>". $row['Auflage'] ."</td><td>". $row['Erscheinungsjahr'] ."</td><td>". $row['Verlag'] ."</td><td>". $statusSymbol ."</td></td>". $row['Rueckgabe']. "</td></tr>";
 }
 ?>
 
